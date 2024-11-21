@@ -1,54 +1,31 @@
-# Astro Starter Kit: Basics
+website link 
 
-```sh
-npm create astro@latest -- --template basics
-```
+https://yokai777.github.io/weather.github.io/
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Project :
+Weather Dashboard
+● Fetch weather data from an API based on user input (e.g., location or ZIP
+code) and display current conditions and forecasts
+Repository :(https://github.com/yokai777/weather-dashboard)
+Requirements:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Write clean and efficient  HTML and CSS code
 
-## 🚀 Project Structure
+Demonstrate clean code structure, including HTML templates (Astro) , Bootstrap and JavaScript and applying generally accepted best practice, e.g. BEM, responsive design
 
-Inside of your Astro project, you'll see the following folders and files:
+Create web page layouts and styling to address customer requirements
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Apply interactivity to a web page with Javascript
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Use Bootstrap and similar web design aids
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+ Incorporate content/data from third-party REST API’s using AJAX
 
-Any static assets, like images, can be placed in the `public/` directory.
+Design, construct and deploy real-world static responsive websites
+Objective
+Develop a full-featured website using Astro and Svelte (optional), incorporating a functional feature from the ideas below or a feature of your own. The key is to ensure proper integration between frontend and the website content, integration with third-party API’s, and deploy the application while demonstrating strong communication and software engineering best practice.
 
-## 🧞 Commands
+Demonstrates clear evidence of software engineering best practice, including usage of Git/GitHub. Project documentation (code comments & markdown) is clear.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Show clear evidence of a hosted Website that is fully functional, accessible and auto- deployed to GitHub pages
