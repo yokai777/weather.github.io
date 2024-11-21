@@ -1,0 +1,26 @@
+/* BEM Methodology */
+.weather__header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+  }
+  
+  .weather__form {
+    text-align: center;
+  }
+  
+  .weather__display {
+    text-align: center;
+  }
+  
+  .weather__footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .weather__display {
+      flex-direction: column;
+    }
+  }
+  
