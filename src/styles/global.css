@@ -34,3 +34,21 @@
     max-width: 600px;
   }
   
+  body {
+    background-color: #f7f9fc;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h5 {
+    font-weight: bold;
+  }
+  
+  .alert {
+    font-size: 1rem;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
