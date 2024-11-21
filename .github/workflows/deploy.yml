@@ -3,13 +3,13 @@ name: Deploy Astro Site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Change this to your active branch name if necessary
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -17,10 +17,10 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build Project
+      - name: Build project
         run: npm run build
 
       - name: Deploy to GitHub Pages
