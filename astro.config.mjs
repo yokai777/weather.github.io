@@ -2,5 +2,14 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   output: 'static',
-  base: '/', // Use '/' for GitHub Pages unless your repository is under a subpath
+  vite: {
+    optimizeDeps: {
+      include: ['bootstrap/dist/css/bootstrap.min.css'],
+    },
+    build: {
+      rollupOptions: {
+        external: ['bootstrap'],
+      },
+    },
+  },
 });
