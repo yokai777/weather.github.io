@@ -15,113 +15,32 @@ import "../styles/global.css";
   <body>
     <div class="container my-5">
       <!-- Header -->
-      <header class="bg-primary text-white p-4 rounded">
+      <header class="bg-primary text-white p-4 rounded shadow">
         <div class="d-flex justify-content-between align-items-center">
           <h1>Weather Dashboard</h1>
-          <p class="mb-0">Dublin, County Dublin | 1°C | Mostly Clear</p>
+          <p class="mb-0">Enter a city, country, or ZIP code!</p>
         </div>
       </header>
 
-      <!-- Weather Alerts -->
-      <section class="alert alert-danger my-4" role="alert">
-        <strong>Yellow Warning for Wind:</strong> WSW wind gusts up to 45 km/h.
-      </section>
+      <!-- Search Box -->
+      <div class="bg-light p-4 rounded shadow my-4">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="Search for weather (city, country, or ZIP)"
+        />
+        <button id="searchBtn" class="btn btn-primary mt-3 w-100">Search</button>
+      </div>
 
       <!-- Current Weather Section -->
-      <section class="my-4">
-        <div class="card">
-          <div class="card-body">
-            <h2>Current Weather</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <p><strong>Temperature:</strong> 1°C</p>
-                <p><strong>Feels Like:</strong> -7°C</p>
-                <p><strong>Weather:</strong> Mostly Clear</p>
-              </div>
-              <div class="col-md-6">
-                <p><strong>Wind:</strong> 23 km/h</p>
-                <p><strong>Gusts:</strong> 45 km/h</p>
-                <p><strong>Air Quality:</strong> Fair</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="weatherResult" class="my-4"></section>
 
       <!-- Forecast Section -->
-      <section class="my-4">
-        <h2>Hourly Forecast</h2>
+      <section id="hourlyForecast" class="my-4">
+        <h2>3-Hourly Forecast</h2>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <h5>21:00</h5>
-                <p><strong>1°C</strong></p>
-                <p>Clear</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <h5>22:00</h5>
-                <p><strong>0°C</strong></p>
-                <p>Clear</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <h5>23:00</h5>
-                <p><strong>-1°C</strong></p>
-                <p>Partly Cloudy</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Weather News Section -->
-      <section class="my-4">
-        <h2>Top Stories</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/150"
-                class="card-img-top"
-                alt="Weather news"
-              />
-              <div class="card-body">
-                <p>Second bomb cyclone to hit the West Coast</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/150"
-                class="card-img-top"
-                alt="Weather news"
-              />
-              <div class="card-body">
-                <p>Storms continue across the Northwest</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/150"
-                class="card-img-top"
-                alt="Weather news"
-              />
-              <div class="card-body">
-                <p>Winter weather expected this weekend</p>
-              </div>
-            </div>
-          </div>
+          <!-- Forecast cards will be dynamically injected here -->
         </div>
       </section>
     </div>

@@ -1,54 +1,25 @@
-/* BEM Methodology */
-.weather__header {
-    background: linear-gradient(90deg, #007bff, #0056b3);
-  }
-  
-  .weather__form {
-    text-align: center;
-  }
-  
-  .weather__display {
-    text-align: center;
-  }
-  
-  .weather__footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .weather__display {
-      flex-direction: column;
-    }
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background: #f7f9fc;
-    margin: 0;
-    padding: 0;
-  }
-  .container {
-    max-width: 600px;
-  }
-  
-  body {
-    background-color: #f7f9fc;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1, h2, h5 {
-    font-weight: bold;
-  }
-  
-  .alert {
-    font-size: 1rem;
-  }
-  
-  .card {
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+body {
+  background: #f4f8fb;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+
+header {
+  border-radius: 10px;
+}
+
+.btn {
+  font-size: 1rem;
+}
