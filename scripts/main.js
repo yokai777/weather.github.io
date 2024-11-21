@@ -3,6 +3,8 @@ const currentWeatherEl = document.getElementById("current-weather");
 const forecastWeatherEl = document.getElementById("forecast-weather");
 
 // OpenWeatherMap API
+/////
+
 const API_KEY = "your_openweathermap_api_key";
 const API_URL = "https://api.openweathermap.org/data/2.5";
 
@@ -12,11 +14,11 @@ form.addEventListener("submit", async (e) => {
   if (!location) return alert("Please enter a location!");
 
   try {
-    // Fetch current weather
+    // Fetching current weather
     const currentWeather = await fetchCurrentWeather(location);
     displayCurrentWeather(currentWeather);
 
-    // Fetch weather forecast
+    // Fetching weather forecast
     const forecast = await fetchWeatherForecast(location);
     displayWeatherForecast(forecast);
   } catch (error) {

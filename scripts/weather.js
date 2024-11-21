@@ -5,6 +5,8 @@ const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 const weatherResult = document.getElementById("weatherResult");
 const hourlyForecastContainer = document.getElementById("hourlyForecast");
+///////
+
 
 // Event Listener for Search Button
 searchBtn.addEventListener("click", () => {
@@ -15,6 +17,7 @@ searchBtn.addEventListener("click", () => {
   fetchHourlyForecast(query);
 });
 
+///////////////////////////////
 // Fetch Current Weather Data
 async function fetchWeatherData(query) {
   try {
@@ -29,6 +32,8 @@ async function fetchWeatherData(query) {
   }
 }
 
+
+/////////////////////////////////
 // Fetch Hourly Weather Forecast
 async function fetchHourlyForecast(query) {
   try {
@@ -43,16 +48,17 @@ async function fetchHourlyForecast(query) {
   }
 }
 
+////////////////////////////////
 // Display Current Weather Data
 function displayWeatherData(data) {
   const { name, sys, weather, main, wind } = data;
-
+////
   // Update Header
   const header = document.querySelector("header p");
   if (header) {
     header.innerHTML = `<strong>${name}, ${sys.country}</strong> | ${main.temp}°C | <em>${weather[0].description}</em>`;
   }
-
+////
   // Update Current Weather Section
   weatherResult.innerHTML = `
     <div class="card shadow border-0 bg-light">
@@ -68,16 +74,17 @@ function displayWeatherData(data) {
   `;
 }
 
+///////////
 // Display Hourly Weather Forecast
 function displayHourlyForecast(data) {
   hourlyForecastContainer.innerHTML = ""; // Clear existing content
-
+///
   // Filter 3-hourly forecasts (e.g., 09:00, 12:00, 15:00, etc.)
   const forecastItems = data.list.filter((item, index) => index % 3 === 0);
 
   forecastItems.forEach((forecast) => {
     const { dt_txt, main, weather } = forecast;
-
+/////
     // Create a card for each forecast
     const forecastCard = document.createElement("div");
     forecastCard.classList.add("col-md-4", "mb-3");
