@@ -1,13 +1,23 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/global.css";
+---
+
 <html>
   <head>
     <title>Weather Dashboard</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to My Weather Dashboard</h1>
-    </header>
-    <main>
-      <p>This is where your weather dashboard content will go.</p>
-    </main>
+    <div class="container mt-5">
+      <h1 class="text-center">Weather Dashboard</h1>
+      <div class="search-box my-4">
+        <input type="text" id="searchInput" class="form-control" placeholder="Enter city or country">
+        <button id="searchBtn" class="btn btn-primary mt-2 w-100">Search</button>
+      </div>
+      <div id="weatherResult" class="mt-4">
+        <!-- Weather results will appear here -->
+      </div>
+    </div>
+    <script src="/scripts/weather.js"></script>
   </body>
 </html>
