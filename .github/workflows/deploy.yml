@@ -3,13 +3,13 @@ name: Deploy Astro Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this to your active branch name if necessary
+      - main  # Change this to your active branch if needed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -17,11 +17,14 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      - name: Build project
+      - name: Build Project
         run: npm run build
+
+      - name: Disable Jekyll
+        run: echo "" > dist/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
