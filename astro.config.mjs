@@ -1,6 +1,8 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig } from 'astro/config';
+import github from '@astrojs/github';
 
 export default defineConfig({
-  site: 'https://weather.github.io',
-  base: 'my-repo',
-})
+  output: 'static',
+  integrations: [github()],
+  base: '/', // Use '/' since it's a direct GitHub Pages repository
+});
